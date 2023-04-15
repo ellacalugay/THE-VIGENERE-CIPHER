@@ -25,6 +25,9 @@ for line in colored_result.split("\n"):
 flower_design()
 print("\n".center(80))
 
+# set the number of iterations
+total_iterations = 100
+
 # Initialize Colorama
 init()
 
