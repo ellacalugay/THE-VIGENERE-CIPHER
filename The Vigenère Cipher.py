@@ -27,6 +27,7 @@ print("\n".center(80))
 # Initialize Colorama
 init()
 
+# Repeat the input prompt and validation checks until the user enters a valid input
 while True:
     try:
         # Print the input prompt in cyan
@@ -48,6 +49,10 @@ while True:
 
 # Print the valid user input in magenta
 print("Message:", Fore.MAGENTA + user_plaintext + Style.RESET_ALL)
+
+# Print the input prompt in yellow
+print("\n") 
+print(Back.CYAN + "\033[1mEnter keyword (all uppercase letters):\033[0m" + Style.RESET_ALL, end = "")
 
 user_keyword = input("Enter keyword (all uppercase): ")
 print
