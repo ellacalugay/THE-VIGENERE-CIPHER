@@ -3,7 +3,7 @@
 # Pseudocode
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
 user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
-user_keyboard = input("Enter keyword (all uppercase): ")
+user_keyword = input("Enter keyword (all uppercase): ")
 print
 # Initialize variables
 cipher_text = ""
@@ -27,3 +27,6 @@ for letter in user_plaintext:
     else:
         cipher_text += ' '
 # Print the resulting ciphertext.
+print("Plaintext: " + user_plaintext)
+print("Keyword: " +user_keyword)
+print("Ciphertext: ")
