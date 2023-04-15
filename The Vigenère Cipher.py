@@ -57,7 +57,9 @@ print(Back.CYAN + "\033[1mEnter keyword (all uppercase letters):\033[0m" + Style
 # Get user input
 user_keyword = input(Fore.YELLOW).upper()
 
-print
+# Print the user keyword in green
+print("Key:", Fore.MAGENTA + user_keyword + Style.RESET_ALL)
+
 # Initialize variables
 cipher_text = ""
 key_index = 0
