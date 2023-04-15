@@ -3,6 +3,7 @@
 from colorama import Back, Fore, Style, init
 import pyfiglet
 from termcolor import colored
+from tqdm import tqdm
 
 def flower_design():
     print("🌷" * 43 )
