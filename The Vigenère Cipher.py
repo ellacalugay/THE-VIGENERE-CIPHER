@@ -5,6 +5,10 @@ import pyfiglet
 def flower_design():
     print("🌷" * 43 )
 
+text = "The Vigenère Cipher"
+font = "Ogre"
+color = "yellow"
+
 # Pseudocode
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
 user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
