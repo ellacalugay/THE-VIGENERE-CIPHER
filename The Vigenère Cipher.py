@@ -14,7 +14,10 @@ for letter in user_plaintext:
     # Find the index of the current letter in the alphabet (A = 0, B = 1, etc.)
         index = ord(letter) - 65  # subtract the ASCII value of 'A' (65) to get the index
     # Find the index of the corresponding letter in the keyword
-        # use modulo to handle keyword shorter than plaintext
+        key_index_mod = key_index % len(user_keyword) # use modulo to handle keyword shorter than plaintext
+        key_letter = user_keyword[key_index_mod]
+        key_index += 1
+        key_index_mod = ord(key_letter) - 65
 # Add the two indices together and take the result modulo 26
 # Find the letter corresponding to the resulting index in the alphabet
     # add the ASCII value of 'A' (65) to get the letter
