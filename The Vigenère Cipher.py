@@ -19,6 +19,7 @@ for letter in user_plaintext:
         key_index += 1
         key_index_mod = ord(key_letter) - 65
 # Add the two indices together and take the result modulo 26
+        cipher_index = (index + key_index_mod) % 26
 # Find the letter corresponding to the resulting index in the alphabet
     # add the ASCII value of 'A' (65) to get the letter
 # Add the resulting letter to the ciphertext variable
