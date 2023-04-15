@@ -54,7 +54,9 @@ print("Message:", Fore.MAGENTA + user_plaintext + Style.RESET_ALL)
 print("\n") 
 print(Back.CYAN + "\033[1mEnter keyword (all uppercase letters):\033[0m" + Style.RESET_ALL, end = "")
 
-user_keyword = input("Enter keyword (all uppercase): ")
+# Get user input
+user_keyword = input(Fore.YELLOW).upper()
+
 print
 # Initialize variables
 cipher_text = ""
