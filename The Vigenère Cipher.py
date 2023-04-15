@@ -16,6 +16,13 @@ colored_result = colored(result, color)
 
 flower_design()
 
+# Center align the output
+for line in colored_result.split("\n"):
+    print(line.center(80))
+
+flower_design()
+print("\n".center(80))
+
 # Pseudocode
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
 user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
