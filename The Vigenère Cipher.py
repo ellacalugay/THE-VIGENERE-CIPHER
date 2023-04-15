@@ -29,10 +29,12 @@ init()
 
 while True:
     try:
-        # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
-        user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
-        # Get the user input
+        # Print the input prompt in cyan
+        print(Back.CYAN + Fore.GREEN + "\033[1mEnter plaintext message (all uppercase letters with no spaces):\033[0m" + Style.RESET_ALL, end = "")
+
+        # Get user input
         user_plaintext = input(Fore.YELLOW)
+
         # Validate user input
         if not user_plaintext.isupper():
             raise ValueError("\033[3mPlaintext message should be in all uppercase letters.\033[0m")
