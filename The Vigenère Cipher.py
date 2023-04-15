@@ -24,7 +24,9 @@ for line in colored_result.split("\n"):
 flower_design()
 print("\n".center(80))
 
-# Pseudocode
+# Initialize Colorama
+init()
+
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
 user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
 user_keyword = input("Enter keyword (all uppercase): ")
