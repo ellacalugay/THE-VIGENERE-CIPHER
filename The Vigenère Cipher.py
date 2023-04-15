@@ -27,8 +27,23 @@ print("\n".center(80))
 # Initialize Colorama
 init()
 
-# Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
-user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
+while True:
+    try:
+        # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
+        user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
+        # Get the user input
+        user_plaintext = input(Fore.YELLOW)
+        # Validate user input
+        if not user_plaintext.isupper():
+            raise ValueError("\033[3mPlaintext message should be in all uppercase letters.\033[0m")
+        elif ' ' in user_plaintext:
+            raise ValueError("Plaintext message should not contain spaces.")
+        else:
+            break
+    except ValueError as e:
+        # Print the error message in red
+        print(Fore.RED + "\033[3mError: {}\033[0m".format(str(e)), "\n")
+
 user_keyword = input("Enter keyword (all uppercase): ")
 print
 # Initialize variables
