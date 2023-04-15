@@ -14,6 +14,8 @@ color = "yellow"
 result = pyfiglet.figlet_format(text, font=font, width=200)
 colored_result = colored(result, color)
 
+flower_design()
+
 # Pseudocode
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
 user_plaintext = input("Enter plaintext message(all uppercase ketters, no spaces): ")
