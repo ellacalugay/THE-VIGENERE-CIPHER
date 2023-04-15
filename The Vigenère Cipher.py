@@ -44,6 +44,9 @@ while True:
         # Print the error message in red
         print(Fore.RED + "\033[3mError: {}\033[0m".format(str(e)), "\n")
 
+# Print the valid user input in magenta
+print("Message:", Fore.MAGENTA + user_plaintext + Style.RESET_ALL)
+
 user_keyword = input("Enter keyword (all uppercase): ")
 print
 # Initialize variables
