@@ -1,6 +1,7 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #2 | PROBLEM 3 - The Vigenère Cipher 
 
 import pyfiglet
+from termcolor import colored
 
 def flower_design():
     print("🌷" * 43 )
@@ -8,6 +9,10 @@ def flower_design():
 text = "The Vigenère Cipher"
 font = "Ogre"
 color = "yellow"
+
+# Pyfiglet for the header
+result = pyfiglet.figlet_format(text, font=font, width=200)
+colored_result = colored(result, color)
 
 # Pseudocode
 # Ask the user for plaintext(all uppercase, no spaces) and keyword (all uppercase).
