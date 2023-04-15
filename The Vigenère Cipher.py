@@ -88,6 +88,9 @@ for letter in user_plaintext:
 print("\n")
 print("\033[38;5;139;1m\033[48;5;225mProcessing the Ciphertext...\033[0m \033[34m")
 
+# Create a progress bar object
+progress_bar = tqdm(total=total_iterations)
+
 # Print the resulting ciphertext.
 print("Plaintext: " + user_plaintext)
 print("Keyword: " +user_keyword)
