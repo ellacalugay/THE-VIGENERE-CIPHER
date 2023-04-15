@@ -23,4 +23,7 @@ for letter in user_plaintext:
 # Find the letter corresponding to the resulting index in the alphabet
         cipher_letter = chr(cipher_index + 65)  # add the ASCII value of 'A' (65) to get the letter
 # Add the resulting letter to the ciphertext variable
+        cipher_text += cipher_letter
+    else:
+        cipher_text += ' '
 # Print the resulting ciphertext.
