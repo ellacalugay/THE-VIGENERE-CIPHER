@@ -12,7 +12,7 @@ key_index = 0
 for letter in user_plaintext:
     if letter != ' ':
     # Find the index of the current letter in the alphabet (A = 0, B = 1, etc.)
-        # subtract the ASCII value of 'A' (65) to get the index
+        index = ord(letter) - 65  # subtract the ASCII value of 'A' (65) to get the index
     # Find the index of the corresponding letter in the keyword
         # use modulo to handle keyword shorter than plaintext
 # Add the two indices together and take the result modulo 26
