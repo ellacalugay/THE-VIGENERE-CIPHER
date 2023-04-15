@@ -60,7 +60,7 @@ user_keyword = input(Fore.YELLOW).upper()
 # Print the user keyword in green
 print("Key:", Fore.MAGENTA + user_keyword + Style.RESET_ALL)
 
-# Initialize variables
+# Create a variable to store the ciphertext 
 cipher_text = ""
 key_index = 0
 # Loop through each letter in the plaintext
@@ -81,6 +81,9 @@ for letter in user_plaintext:
         cipher_text += cipher_letter
     else:
         cipher_text += ' '
+print("\n")
+print("\033[38;5;139;1m\033[48;5;225mProcessing the Ciphertext...\033[0m \033[34m")
+
 # Print the resulting ciphertext.
 print("Plaintext: " + user_plaintext)
 print("Keyword: " +user_keyword)
