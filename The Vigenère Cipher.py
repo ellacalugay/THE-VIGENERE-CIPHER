@@ -112,3 +112,6 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Vigenère Cipher Output")
 font = pygame.font.Font(None, 36)
+
+# Construct the ciphertext interface
+text_surface = font.render("Ciphertext: " + cipher_text, True, (255, 255, 255))
