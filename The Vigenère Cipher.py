@@ -125,3 +125,10 @@ screen.fill((0, 0, 255)) #set the background color to blue
 screen.blit(text_surface, text_area)
 
 pygame.display.flip()
+
+# Expect the user to exit the window.
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
