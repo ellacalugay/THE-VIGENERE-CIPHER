@@ -119,3 +119,6 @@ text_surface = font.render("Ciphertext: " + cipher_text, True, (255, 255, 255))
 # Place the ciphertext in the center of the screen.
 center_a, center_b = screen.get_rect().center
 text_area = text_surface.get_rect(center=(center_a, center_b))
+
+# Display the ciphertext on the screen.
+screen.blit(text_surface, text_area)
