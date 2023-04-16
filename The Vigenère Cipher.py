@@ -109,3 +109,6 @@ progress_bar.close()
 
 # Open the Pygame window and show the ciphertext
 pygame.init()
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("Vigenère Cipher Output")
+font = pygame.font.Font(None, 36)
