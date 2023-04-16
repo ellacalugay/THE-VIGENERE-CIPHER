@@ -91,6 +91,11 @@ print("\033[38;5;139;1m\033[48;5;225mProcessing the Ciphertext...\033[0m \033[34
 # Create a progress bar object
 progress_bar = tqdm(total=total_iterations)
 
+# Loop through the iterations
+for i in range(total_iterations):
+    # do some work here
+    time.sleep(0.1)
+    
 # Print the resulting ciphertext.
 print("Plaintext: " + user_plaintext)
 print("Keyword: " +user_keyword)
