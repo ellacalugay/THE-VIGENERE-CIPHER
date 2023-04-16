@@ -121,4 +121,5 @@ center_a, center_b = screen.get_rect().center
 text_area = text_surface.get_rect(center=(center_a, center_b))
 
 # Display the ciphertext on the screen.
+screen.fill((0, 0, 255)) #set the background color to blue
 screen.blit(text_surface, text_area)
