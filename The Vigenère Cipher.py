@@ -1,9 +1,12 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #2 | PROBLEM 3 - The Vigenère Cipher 
 
+import sys
 from colorama import Back, Fore, Style, init
 import pyfiglet
 from termcolor import colored
 from tqdm import tqdm
+import time
+import pygame
 
 def flower_design():
     print("🌷" * 43 )
