@@ -95,6 +95,12 @@ progress_bar = tqdm(total=total_iterations)
 for i in range(total_iterations):
     # do some work here
     time.sleep(0.1)
+
+    # update the progress bar
+    progress_bar.update(1)
+
+# Close the progress bar
+progress_bar.close()
     
 # Print the resulting ciphertext.
 print("Plaintext: " + user_plaintext)
