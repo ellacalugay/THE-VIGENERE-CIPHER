@@ -1,5 +1,6 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #2 | PROBLEM 3 - The Vigenère Cipher 
 
+# Import the necessary module 
 import sys
 from colorama import Back, Fore, Style, init
 import pyfiglet
@@ -70,6 +71,7 @@ print("Key:", Fore.MAGENTA + user_keyword + Style.RESET_ALL)
 # Create a variable to store the ciphertext 
 cipher_text = ""
 key_index = 0
+
 # Loop through each letter in the plaintext
 for letter in user_plaintext:
     if letter != ' ':
@@ -104,8 +106,6 @@ for i in range(total_iterations):
 
 # Close the progress bar
 progress_bar.close()
-    
-# Print the resulting ciphertext.
-print("Plaintext: " + user_plaintext)
-print("Keyword: " +user_keyword)
-print("Ciphertext: ")
+
+# Open the Pygame window and show the ciphertext
+pygame.init()
